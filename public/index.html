@@ -6,21 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Landing Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="navbar">
-        <div class="logo">📦 Grid</div>
-        <nav>
-            <ul>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Who we are</a></li>
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="sign-in">Sign In</a>
+        <div class="container">
+            <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <svg width="70" height="64" viewBox="0 0 70 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M47.25 17.6H22.75C20.817 17.6 19.25 19.0327 19.25 20.8V43.2C19.25 44.9673 20.817 46.4 22.75 46.4H47.25C49.183 46.4 50.75 44.9673 50.75 43.2V20.8C50.75 19.0327 49.183 17.6 47.25 17.6Z"
+                        stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.25 27.2H50.75" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M29.75 46.4V27.2" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span style="font-size: 30px; font-weight: 900; color: #2d3436; padding-right: 150px;">Grid</span>
+            </div>
+
+            <nav>
+                <ul style="display: flex; align-items: center; gap: 16px; list-style: none; padding: 0; margin: 0;">
+                    <li><a href="#" style="text-decoration: none; color: #2d3436; font-weight: 500;">How it works</a>
+                    </li>
+                    <li><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.3992 6.59659C4.95247 6.59659 6.2117 5.33736 6.2117 3.78409C6.2117 2.23082 4.95247 0.971591 3.3992 0.971591C1.84593 0.971591 0.586701 2.23082 0.586701 3.78409C0.586701 5.33736 1.84593 6.59659 3.3992 6.59659Z"
+                                fill="#FDCB6E" />
+                        </svg></li>
+                    <li><a href="#" style="text-decoration: none; color: #2d3436; font-weight: 500;">Who we are</a></li>
+                    <li><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.3992 6.59659C4.95247 6.59659 6.2117 5.33736 6.2117 3.78409C6.2117 2.23082 4.95247 0.971591 3.3992 0.971591C1.84593 0.971591 0.586701 2.23082 0.586701 3.78409C0.586701 5.33736 1.84593 6.59659 3.3992 6.59659Z"
+                                fill="#FDCB6E" />
+                        </svg></li>
+                    <li><a href="#" style="text-decoration: none; color: #2d3436; font-weight: 500;">What we do</a></li>
+                    <li><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.3992 6.59659C4.95247 6.59659 6.2117 5.33736 6.2117 3.78409C6.2117 2.23082 4.95247 0.971591 3.3992 0.971591C1.84593 0.971591 0.586701 2.23082 0.586701 3.78409C0.586701 5.33736 1.84593 6.59659 3.3992 6.59659Z"
+                                fill="#FDCB6E" />
+                        </svg></li>
+                    <li><a href="#" style="text-decoration: none; color: #2d3436; font-weight: 500;">Contact us</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="sign-in" style="margin-left: 150px;">Sign In</a>
+        </div>
     </header>
 
     <section class="hero">
@@ -48,8 +80,8 @@
     <section class="features">
         <h2>Delivering good designs since 1954 🚛💨</h2>
         <p class="features-subtext">
-            We’re the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your
-            layouts, templates and developers to empower all involved.
+            We’re the first multi-purpose design kit solutions for businesses. We help you bridge
+            gaps between your layouts, templates and developers to empower all involved.
         </p>
 
         <div class="features-grid">
@@ -79,48 +111,6 @@
                 <p>You can toggle to any icon within Instances and customize outlined stroke to more bolder or lighter
                 </p>
                 <a href="#" class="learn-btn">Learn more</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing">
-        <h2>Affordable pricing</h2>
-        <p class="billing-toggle">Bill me <span class="active">monthly</span> · yearly</p>
-
-        <div class="pricing-grid">
-            <div class="plan free">
-                <h3>Free</h3>
-                <p class="price-tag">/ forever</p>
-                <ul>
-                    <li>✔ Components-driven system</li>
-                    <li>✔ Sales-boosting landing pages</li>
-                    <li>✔ Awesome Feather icons pack</li>
-                </ul>
-                <a href="#" class="btn-outline">Try for free</a>
-            </div>
-
-            <div class="plan featured">
-                <div class="tag">Best!</div>
-                <h3>$24 <span>/ month</span></h3>
-                <ul>
-                    <li>✔ Components-driven system</li>
-                    <li>✔ Sales-boosting landing pages</li>
-                    <li>✔ Awesome Feather icons pack</li>
-                    <li>✔ Themed into 3 different styles</li>
-                    <li>✔ Will help to learn Figma</li>
-                </ul>
-                <a href="#" class="btn-primary">Regular license</a>
-            </div>
-
-            <div class="plan corporate">
-                <h3>$12 <span>/ editor</span></h3>
-                <ul>
-                    <li>✔ Components-driven system</li>
-                    <li>✔ Sales-boosting landing pages</li>
-                    <li>✔ Awesome Feather icons pack</li>
-                    <li>✔ Themed into 3 different styles</li>
-                </ul>
-                <a href="#" class="btn-outline">Extended license</a>
             </div>
         </div>
     </section>
@@ -171,8 +161,6 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>
